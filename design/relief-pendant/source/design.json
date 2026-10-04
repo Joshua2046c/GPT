@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "buildNumber": 3,
+  "sourceHash": "eb8c8e6cb59870d5ea70e56008bc17ada36f3162948141df440bb93b146e27c3",
+  "units": "mm",
+  "coordinateFrame": "replicator-world-z-up",
+  "targets": [
+    {
+      "id": "pendant",
+      "label": "pendant",
+      "cells": [
+        {
+          "id": "pendant",
+          "target": "pendant",
+          "order": 0,
+          "path": "design/relief-pendant/source/parts/pendant/000-pendant.py",
+          "sha256": "1430b276c3264e0c5700df5b91f97d3be94a26c2bbd613d4f4bca0daadff09ac"
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "objects": [
+    {
+      "id": "pendant",
+      "target": "pendant",
+      "label": "浮雕吊牌",
+      "kind": "generated",
+      "shapeHash": "338bb0f6b37d079384718065cb8d6e091a60b3f064033c4d53afb642c049faf8",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [],
+  "fits": [],
+  "updatedAt": "2026-09-22T10:08:20.997Z",
+  "parameters": {
+    "pendant": {
+      "pendant_width": 50,
+      "pendant_body_height": 28,
+      "pendant_base_thickness": 3,
+      "pendant_corner_radius": 4,
+      "pendant_lug_diameter": 8,
+      "pendant_lug_x": 0,
+      "pendant_lug_y": 16,
+      "pendant_hole_diameter": 4,
+      "pendant_relief_height": 0.8,
+      "pendant_platform_height": 0.4,
+      "pendant_ultra_x": -6,
+      "pendant_ultra_y": 9,
+      "pendant_ultra_font_size": 5,
+      "pendant_subtitle_x": -4,
+      "pendant_subtitle_y": 4.5,
+      "pendant_subtitle_font_size": 3.2,
+      "pendant_lightning_x": -19,
+      "pendant_lightning_y": 7.5,
+      "pendant_lightning_height": 7,
+      "pendant_refresh_x": 19,
+      "pendant_refresh_y": 8,
+      "pendant_refresh_radius": 2.5,
+      "pendant_refresh_stroke": 0.6,
+      "pendant_slider_x": 0,
+      "pendant_slider_y": -1,
+      "pendant_slider_width": 43,
+      "pendant_slider_height": 4,
+      "pendant_knob_diameter": 4,
+      "pendant_knob_offset": 18,
+      "pendant_effort_x": -8,
+      "pendant_effort_y": -9,
+      "pendant_effort_width": 28,
+      "pendant_effort_height": 6,
+      "pendant_effort_font_size": 2.8,
+      "pendant_microphone_x": 10,
+      "pendant_microphone_y": -9,
+      "pendant_microphone_height": 5,
+      "pendant_microphone_stroke": 0.55,
+      "pendant_wave_x": 18.8,
+      "pendant_wave_y": -9,
+      "pendant_wave_disk_diameter": 6.4,
+      "pendant_wave_height": 4,
+      "pendant_wave_bar_width": 0.55,
+      "pendant_wave_bar_pitch": 0.85,
+      "pendant_slider_recess_depth": 0.4
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "bom_ready": true,
+  "requirements_digest": "f7ed4489cbae53b0cd8a2d371d95268da32b2f1898cf159e1e3b599199101106",
+  "items": [
+    {
+      "id": "pendant",
+      "role": "custom_mechanical_part",
+      "name": "一体浮雕吊牌",
+      "quantity": 1,
+      "part_number": "RELIEF-PENDANT-50",
+      "manufacturer": "Project custom design",
+      "source": "default",
+      "description": "50 × 34 × 3.8 mm overall; 3 mm plate; 4 mm hanging hole; 0.4/0.8 mm relief on other artwork. Central 43 × 4 mm capsule recessed 0.4 mm with 2.6 mm floor. Knob center (18,-1), diameter 4 mm, top Z=3.8 mm preserved.",
+      "selection_reason": "Custom single solid matches the reference artwork and accepted default dimensions.",
+      "cad_relevance": "Entire delivered solid",
+      "part_identity": "273fdd6e02ab41cf"
+    }
+  ],
+  "unresolved_items": [],
+  "supply_risks": [
+    {
+      "id": "fine_text",
+      "severity": "advisory",
+      "description": "Small lettering and icon strokes are visual-model features; fabrication fidelity requires a process-specific check before printing or casting."
+    },
+    {
+      "id": "font_match",
+      "severity": "advisory",
+      "description": "Use a similar bold sans-serif font rather than claim an exact original font."
+    },
+    {
+      "id": "finish",
+      "severity": "advisory",
+      "description": "Single fused solid; reference black/purple/white finish is not a multi-material manufacturing package."
+    },
+    {
+      "id": "strength",
+      "severity": "advisory",
+      "description": "Hanging lug has nominal 2 mm radial ligament; no load or material strength certification."
+    }
+  ]
+}

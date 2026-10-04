@@ -1,0 +1,115 @@
+{
+  "requirements": {
+    "product_class": {
+      "value": "mechanical",
+      "source": "default"
+    },
+    "product_type": {
+      "value": "参考图中的吊牌挂坠",
+      "source": "user"
+    },
+    "reference_image": {
+      "value": "product/references/uploads/20260922T093345504Z-1-gpt.jpg",
+      "source": "user"
+    },
+    "decoration_type": {
+      "value": "文字和图案为实体浮雕；中部胶囊形长条为下凹结构，圆形按钮保持不变",
+      "source": "user"
+    },
+    "longest_dimension_mm": {
+      "value": 50,
+      "source": "default"
+    },
+    "base_thickness_mm": {
+      "value": 3,
+      "source": "default"
+    },
+    "relief_height_mm": {
+      "value": 0.8,
+      "source": "default"
+    },
+    "back_surface": {
+      "value": "平面，无额外文字",
+      "source": "default"
+    },
+    "hanging_hole_diameter_mm": {
+      "value": 4,
+      "source": "default"
+    },
+    "construction": {
+      "value": "一体实体，浮雕连接到底板；不含挂绳、链条和金属挂环",
+      "source": "default"
+    },
+    "cad_delivery": {
+      "value": "参数化 CAD 和 STEP 模型",
+      "source": "default"
+    },
+    "outline": {
+      "value": "横向圆角矩形，顶部中央圆滑吊耳及贯穿挂孔",
+      "source": "research"
+    },
+    "front_text": {
+      "value": [
+        "Ultra",
+        "GPT-6 Astra",
+        "Select effort"
+      ],
+      "source": "research"
+    },
+    "front_layout": {
+      "value": {
+        "upper_left": "紫色闪电",
+        "upper_center": "紫色 Ultra 及右箭头，下方白色 GPT-6 Astra",
+        "upper_right": "白色双箭头刷新",
+        "middle": "紫色胶囊形滑条，白色圆形滑块靠右",
+        "lower_left": "深色胶囊底块，白色 Select effort 及下箭头",
+        "lower_right": "白色麦克风；白色圆盘内五根紫色圆头声波竖条，中间最高"
+      },
+      "source": "research"
+    },
+    "approximate_total_height_mm": {
+      "value": 34,
+      "source": "default"
+    },
+    "relief_layers_above_base_mm": {
+      "value": {
+        "support_platforms": 0.4,
+        "top_features": 0.8,
+        "standalone_text_and_icons": 0.8
+      },
+      "source": "default"
+    },
+    "font_strategy": {
+      "value": "采用外观相近的无衬线字体，准确保留大小写、空格及连字符；不承诺原字体逐点一致",
+      "source": "default"
+    },
+    "visual_fidelity": {
+      "value": "保留参考图构图、图标和黑紫白配色参考；阴影、高光和渐变不复制为实体几何；重叠图案用高度差区分",
+      "source": "default"
+    },
+    "functional_scope": {
+      "value": "装饰挂坠，无电子、滑动及按键功能",
+      "source": "default"
+    },
+    "slider_structure": {
+      "value": "标注 #1 中部胶囊形长条下凹，圆形按钮的位置、直径和顶面高度保持不变",
+      "source": "user"
+    },
+    "slider_recess_depth_mm": {
+      "value": 0.4,
+      "source": "default"
+    },
+    "slider_knob_preserved": {
+      "value": {
+        "center_xy_mm": [
+          18,
+          -1
+        ],
+        "diameter_mm": 4,
+        "top_z_mm": 3.8
+      },
+      "source": "research"
+    }
+  },
+  "open_questions": []
+}

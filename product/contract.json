@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "artifact_level": "standalone_part",
+  "deliverable_intent": "visual_draft",
+  "summary": "横向圆角吊牌，文字及图标浮雕；中部胶囊长条下凹，圆形按钮保持位置、直径和顶面高度。",
+  "required_interfaces": [],
+  "external_references": [
+    {
+      "id": "pendant_reference",
+      "source": "user_requested",
+      "description": "本轮 GPT.jpeg 参考图，已直接辨认三组文字、箭头、闪电、刷新、滑条、麦克风、声波及吊牌外形。",
+      "path": "product/references/uploads/20260922T093345504Z-1-gpt.jpg"
+    },
+    {
+      "id": "slider_recess_markup",
+      "source": "user_requested",
+      "description": "用户标注 #1：中部胶囊长条为下凹结构，圆形按钮保持不变。",
+      "path": "product/references/uploads/20260922T100437204Z-1-mark.png"
+    }
+  ],
+  "cad": {
+    "requirement": "required",
+    "designs": [
+      {
+        "role": "pendant",
+        "design_id": "relief-pendant",
+        "description": "参考图吊牌的实体浮雕模型",
+        "delivery_target": "visual_review",
+        "required_formats": [
+          "step"
+        ],
+        "interface_ids": [],
+        "reference_ids": [
+          "pendant_reference",
+          "slider_recess_markup"
+        ]
+      }
+    ]
+  },
+  "open_questions": []
+}

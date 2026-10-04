@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "status": "ready_for_cad",
+  "units": "mm",
+  "requirements_digest": "f7ed4489cbae53b0cd8a2d371d95268da32b2f1898cf159e1e3b599199101106",
+  "coordinate_frame": "XY front face, +Y toward lug, back at Z=0",
+  "mechanical": {
+    "overall": [
+      50,
+      34,
+      3.8
+    ],
+    "body": [
+      50,
+      28,
+      3
+    ],
+    "body_corner_radius": 4,
+    "lug": {
+      "outer_diameter": 8,
+      "hole_diameter": 4,
+      "center": [
+        0,
+        16
+      ],
+      "radial_ligament": 2,
+      "body_overlap_y": 2
+    },
+    "relief": {
+      "platform_height": 0.4,
+      "top_height": 0.8,
+      "construction": "Other reliefs fused into base; central slider recessed except preserved circular knob."
+    },
+    "layout": {
+      "ultra": {
+        "center": [
+          -6,
+          9
+        ],
+        "font_size": 5
+      },
+      "subtitle": {
+        "center": [
+          -4,
+          4.5
+        ],
+        "font_size": 3.2
+      },
+      "lightning": {
+        "center": [
+          -19,
+          7.5
+        ],
+        "size": [
+          4.5,
+          7
+        ]
+      },
+      "refresh": {
+        "center": [
+          19,
+          8
+        ],
+        "radius": 2.5,
+        "stroke": 0.6
+      },
+      "slider": {
+        "center": [
+          0,
+          -1
+        ],
+        "size": [
+          43,
+          4
+        ],
+        "knob_center": [
+          18,
+          -1
+        ],
+        "knob_diameter": 4,
+        "structure": "recessed_except_knob",
+        "recess_depth": 0.4,
+        "floor_z": 2.6,
+        "remaining_floor_thickness": 2.6,
+        "knob_top_z": 3.8,
+        "button_support": "Circular material column joins unchanged knob top to floor; no floating disk"
+      },
+      "effort": {
+        "center": [
+          -8,
+          -9
+        ],
+        "size": [
+          28,
+          6
+        ],
+        "font_size": 2.8
+      },
+      "microphone": {
+        "center": [
+          10,
+          -9
+        ],
+        "size": [
+          3,
+          5
+        ],
+        "stroke": 0.55
+      },
+      "wave": {
+        "center": [
+          18.8,
+          -9
+        ],
+        "diameter": 6.4,
+        "bar_width": 0.55,
+        "bar_pitch": 0.85,
+        "bar_heights": [
+          1.5,
+          2.8,
+          4,
+          2.8,
+          1.5
+        ]
+      }
+    },
+    "fasteners": [],
+    "external_hardware": [],
+    "connections": [
+      {
+        "id": "artwork_to_plate",
+        "implementation": "free",
+        "kind": "fused",
+        "description": "Reliefs fused to plate or underlying platforms; no mechanical joint or assembly."
+      }
+    ],
+    "font": "Arial Bold or runtime matching sans-serif"
+  },
+  "unresolved_items": [],
+  "risks": [
+    {
+      "id": "fine_text",
+      "severity": "advisory",
+      "description": "Small lettering and icon strokes are visual-model features; fabrication fidelity requires a process-specific check before printing or casting."
+    },
+    {
+      "id": "font_match",
+      "severity": "advisory",
+      "description": "Use a similar bold sans-serif font rather than claim an exact original font."
+    },
+    {
+      "id": "finish",
+      "severity": "advisory",
+      "description": "Single fused solid; reference black/purple/white finish is not a multi-material manufacturing package."
+    },
+    {
+      "id": "strength",
+      "severity": "advisory",
+      "description": "Hanging lug has nominal 2 mm radial ligament; no load or material strength certification."
+    }
+  ],
+  "evidence_refs": [
+    "product/requirements.json",
+    "product/references/uploads/20260922T093345504Z-1-gpt.jpg",
+    "product/references/uploads/20260922T100437204Z-1-mark.png"
+  ]
+}
