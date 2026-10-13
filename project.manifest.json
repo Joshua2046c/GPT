@@ -2,7 +2,12 @@
   "formatVersion": 4,
   "name": "GPT 挂坠",
   "title": "GPT 浮雕挂坠",
-  "summary": "装饰挂坠，正面浮雕 GPT 界面图案，中部滑条为凹槽，圆形按钮保持凸起",
+  "summary": "将「GPT-6 Astra」面板做成实体模型，挂在包上，仿佛随时可以开启和神的对话",
   "license": "CC-BY-4.0",
+  "authors": [
+    {
+      "name": "Miles"
+    }
+  ],
   "artifacts": "rebuild"
 }
