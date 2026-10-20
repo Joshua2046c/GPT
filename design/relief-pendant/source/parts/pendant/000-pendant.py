@@ -5,9 +5,10 @@ h = param('pendant_body_height', 28.0)
 t = param('pendant_base_thickness', 3.0)
 cr = param('pendant_corner_radius', 4.0)
 lug_d = param('pendant_lug_diameter', 8.0)
-lug_x = param('pendant_lug_x', 0.0)
-lug_y = param('pendant_lug_y', 16.0)
+lug_x = param('pendant_lug_x', -27.0)
+lug_y = param('pendant_lug_y', 0.0)
 hole_d = param('pendant_hole_diameter', 4.0)
+root_r = param('pendant_lug_root_radius', 2.0)
 rel = param('pendant_relief_height', 0.8)
 platform = param('pendant_platform_height', 0.4)
 # Per-motif dimensions and independent centers.
@@ -46,10 +47,21 @@ wd = param('pendant_wave_disk_diameter', 6.4)
 wh = param('pendant_wave_height', 4.0)
 ws = param('pendant_wave_bar_width', 0.55)
 wp = param('pendant_wave_bar_pitch', 0.85)
-assert 0 < platform < rel and lug_d > hole_d and lug_y-lug_d/2 < h/2
+assert 0 < platform < rel and lug_d > hole_d
+assert abs(lug_x) < w/2+lug_d/2 and abs(lug_y) < h/2+lug_d/2
 assert 0 < vd < t, 'Recess must leave a solid floor'
 EPS = 0.04  # Boolean overlap only.
 base_outline = RectangleRounded(w,h,cr) + Pos(lug_x,lug_y)*Circle(lug_d/2)
+# Tangent concave fillets at the two lug/plate junctions, per user markup.
+assert 0 < root_r <= lug_d/2
+root_vertices = [v for v in base_outline.vertices()
+                 if abs(v.X+w/2)<1e-5 and abs(v.Y-lug_y)<lug_d/2]
+assert len(root_vertices)==2, 'Expected the two left lug root corners'
+unrounded_area = base_outline.area
+base_outline = fillet(root_vertices, radius=root_r)
+assert base_outline.area > unrounded_area, 'Root blends must fill the concave corners'
+print('Lug root tangent fillets:',len(root_vertices),'Radius mm:',root_r,
+      'Added outline area mm2:',base_outline.area-unrounded_area)
 base_outline = base_outline - Pos(lug_x,lug_y)*Circle(hole_d/2)
 body = extrude(base_outline,amount=t,dir=(0,0,1))
 
@@ -125,8 +137,12 @@ body=body.clean()
 assert len(body.solids())==1,'Every relief must join the single base solid'
 assert body.is_valid,'Invalid pendant geometry'
 bb=body.bounding_box()
-assert abs(bb.size.X-w)<1e-5 and abs(bb.size.Z-t-rel)<1e-5
+expected_width=max(w/2,lug_x+lug_d/2)-min(-w/2,lug_x-lug_d/2)
+expected_height=max(h/2,lug_y+lug_d/2)-min(-h/2,lug_y-lug_d/2)
+assert abs(bb.size.X-expected_width)<1e-5 and abs(bb.size.Y-expected_height)<1e-5
+assert abs(bb.size.Z-t-rel)<1e-5
 assert abs(bb.min.Z)<1e-5
+print('Keyring hole center XY mm:',lug_x,lug_y,'Hole diameter mm:',hole_d)
 print('Pendant bbox mm:',bb.size.X,bb.size.Y,bb.size.Z)
 print('Solid count:',len(body.solids()),'Lug radial ligament mm:',(lug_d-hole_d)/2)
 print('Relief planes mm:',t,t+platform,t+rel)

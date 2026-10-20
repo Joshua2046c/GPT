@@ -1,7 +1,5 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 3,
-  "sourceHash": "eb8c8e6cb59870d5ea70e56008bc17ada36f3162948141df440bb93b146e27c3",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -14,7 +12,7 @@
           "target": "pendant",
           "order": 0,
           "path": "design/relief-pendant/source/parts/pendant/000-pendant.py",
-          "sha256": "1430b276c3264e0c5700df5b91f97d3be94a26c2bbd613d4f4bca0daadff09ac"
+          "sha256": "a8c7d5d22e2ac4e6702d78a72275b2306e60df0abc38446874438c0344990b4a"
         }
       ],
       "dependencies": []
@@ -26,7 +24,7 @@
       "target": "pendant",
       "label": "浮雕吊牌",
       "kind": "generated",
-      "shapeHash": "338bb0f6b37d079384718065cb8d6e091a60b3f064033c4d53afb642c049faf8",
+      "shapeHash": "d922c6e346e6c908fab3b08bf70b5f60b1defbe683ebf39fb45daf94bc58cf29",
       "transform": {
         "positionMm": [
           0,
@@ -50,7 +48,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-22T10:08:20.997Z",
+  "updatedAt": "2026-10-20T16:26:15.023Z",
   "parameters": {
     "pendant": {
       "pendant_width": 50,
@@ -58,8 +56,8 @@
       "pendant_base_thickness": 3,
       "pendant_corner_radius": 4,
       "pendant_lug_diameter": 8,
-      "pendant_lug_x": 0,
-      "pendant_lug_y": 16,
+      "pendant_lug_x": -27,
+      "pendant_lug_y": 0,
       "pendant_hole_diameter": 4,
       "pendant_relief_height": 0.8,
       "pendant_platform_height": 0.4,
@@ -97,7 +95,8 @@
       "pendant_wave_height": 4,
       "pendant_wave_bar_width": 0.55,
       "pendant_wave_bar_pitch": 0.85,
-      "pendant_slider_recess_depth": 0.4
+      "pendant_slider_recess_depth": 0.4,
+      "pendant_lug_root_radius": 2
     }
   }
 }

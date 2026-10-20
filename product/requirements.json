@@ -17,7 +17,7 @@
       "source": "user"
     },
     "longest_dimension_mm": {
-      "value": 50,
+      "value": 56,
       "source": "default"
     },
     "base_thickness_mm": {
@@ -45,8 +45,8 @@
       "source": "default"
     },
     "outline": {
-      "value": "横向圆角矩形，顶部中央圆滑吊耳及贯穿挂孔",
-      "source": "research"
+      "value": "横向圆角矩形，钥匙挂孔及圆滑吊耳位于正面视角的左侧边缘",
+      "source": "user"
     },
     "front_text": {
       "value": [
@@ -68,7 +68,7 @@
       "source": "research"
     },
     "approximate_total_height_mm": {
-      "value": 34,
+      "value": 28,
       "source": "default"
     },
     "relief_layers_above_base_mm": {
@@ -109,6 +109,25 @@
         "top_z_mm": 3.8
       },
       "source": "research"
+    },
+    "hanging_hole_location": {
+      "value": "正面视角的左边侧面",
+      "source": "user"
+    },
+    "hanging_lug_center_xy_mm": {
+      "value": [
+        -27,
+        0
+      ],
+      "source": "default"
+    },
+    "hanging_lug_transition": {
+      "value": "挂孔吊耳根部两侧按标注图作圆润、相切的轮廓过渡",
+      "source": "user"
+    },
+    "hanging_lug_transition_radius_mm": {
+      "value": 2,
+      "source": "default"
     }
   },
   "open_questions": []

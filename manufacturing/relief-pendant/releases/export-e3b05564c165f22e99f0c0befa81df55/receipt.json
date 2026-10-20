@@ -1,0 +1,101 @@
+{
+  "designId": "relief-pendant",
+  "revision": "94ff44480a05832a0957f20ab075984262d07cc1114c9acf94b3ea4a9240c187",
+  "schemaVersion": 2,
+  "exportId": "export-e3b05564c165f22e99f0c0befa81df55",
+  "generatedAt": "2026-10-20T16:26:15.023Z",
+  "designSha256": "e34f60700f05cfec226e3a390e32f43da98d76e68636859e792147b81f02d88d",
+  "role": "pendant",
+  "stateHash": "21b46ba6f12afd59e536bc716db54b3317c11d3318434e014ba6ceaff276b117",
+  "stateManifest": {
+    "schemaVersion": 3,
+    "designId": "relief-pendant",
+    "role": "pendant",
+    "design": {
+      "revision": "94ff44480a05832a0957f20ab075984262d07cc1114c9acf94b3ea4a9240c187",
+      "designSha256": "1db3023d3d3a8d8559679b0a285a7cf86b98409bef7b20f028e8c7a40b105749",
+      "manifestSha256": "4c42429083ad084b8a8da38eab64afcdcd8c5dd3e83da5d457104b3e6ff38128",
+      "stepSha256": "778f36a6cceb7b18db56b3c05338d176c298611b57555d857a4fa321b2003aed",
+      "pcbReleases": []
+    },
+    "brief": {
+      "path": "design/relief-pendant/README.md",
+      "sha256": "0a055c71d900e762253dd4438b978358f63354f3b0852adaa58b9695296a3473"
+    },
+    "requirement": {
+      "artifactContractPath": "product/contract.json",
+      "artifactContractSha256": "6174f31bac0ab972f2a9a147b0896f0fb3d335438f9b489bba03475b35d16a03",
+      "designRequirementSha256": "36298255105188fb8c223952fdec2507444c658cc3a26ffc4a955a3036d67692",
+      "inputs": [
+        {
+          "role": "external-reference",
+          "id": "lug_root_rounding_markup",
+          "path": "product/references/uploads/20261020T162450689Z-1-mark-1.png",
+          "sha256": "aaf42aed164ad626b71787264201220cd28ed9810218367731f108c180006a14",
+          "sizeBytes": 121201
+        },
+        {
+          "role": "external-reference",
+          "id": "pendant_reference",
+          "path": "product/references/uploads/20260922T093345504Z-1-gpt.jpg",
+          "sha256": "46259da8e0ab40aea48e2744843a872c469e64c278fb7ab979b8b0c20c58212d",
+          "sizeBytes": 1751630
+        },
+        {
+          "role": "external-reference",
+          "id": "slider_recess_markup",
+          "path": "product/references/uploads/20260922T100437204Z-1-mark.png",
+          "sha256": "8050241a977b6df292ab12b1e66ffbf8bbfa0c570b5f508152084115e630ace9",
+          "sizeBytes": 152489
+        }
+      ]
+    },
+    "delivery": {
+      "target": "visual_review",
+      "formats": [
+        "step"
+      ]
+    },
+    "stateHash": "21b46ba6f12afd59e536bc716db54b3317c11d3318434e014ba6ceaff276b117"
+  },
+  "buildArtifacts": {
+    "manifestSha256": "4c42429083ad084b8a8da38eab64afcdcd8c5dd3e83da5d457104b3e6ff38128",
+    "stepSha256": "778f36a6cceb7b18db56b3c05338d176c298611b57555d857a4fa321b2003aed"
+  },
+  "exportAlgorithm": {
+    "version": 1,
+    "bootstrapSha256": "5dd2a543e9cad32f4b7d6303e41a1ed23bd24acea30c3faacc5d72a98b18ff4f"
+  },
+  "sourceHashes": {
+    "pendant/pendant": "a8c7d5d22e2ac4e6702d78a72275b2306e60df0abc38446874438c0344990b4a"
+  },
+  "assetHashes": {},
+  "shapeHashes": {
+    "pendant": "d922c6e346e6c908fab3b08bf70b5f60b1defbe683ebf39fb45daf94bc58cf29"
+  },
+  "runtime": {
+    "manifestHash": "ab96ab4a8cb2db98edb9ee2d6904f4abce711776fb5a1af03a7266313006c5d2",
+    "pythonVersion": "3.12.13",
+    "build123dVersion": "0.10.0",
+    "ocpVersion": "7.8.1.1.post1",
+    "cadpyHash": "cc86bceb91ba7b9668854891400ce9ca3f1d372a59aa992460df9d8ed25b89f5"
+  },
+  "artifacts": [
+    {
+      "path": "manufacturing/relief-pendant/releases/export-e3b05564c165f22e99f0c0befa81df55/model.step",
+      "role": "model/step",
+      "sha256": "778f36a6cceb7b18db56b3c05338d176c298611b57555d857a4fa321b2003aed",
+      "sizeBytes": 3050954
+    }
+  ],
+  "authority": {
+    "version": 1,
+    "algorithm": "hmac-sha256",
+    "keyId": "f5453d06b38810a40e1fe5560b5b81dd",
+    "projectId": "cd410a57-c94f-4187-aad4-74aac0fc5f14",
+    "receiptPath": "manufacturing/relief-pendant/releases/export-e3b05564c165f22e99f0c0befa81df55/receipt.json",
+    "payloadSha256": "9ee17a352a86e37da83da1a6a9f85ce3f07759512e1fe1616d2a68fbeddc38b6",
+    "mac": "2e09e79ab34357c82e5958526afe2e0082b54ee7862c08458d0b321175aa2ecb"
+  },
+  "status": "handoff"
+}

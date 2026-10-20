@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "f7ed4489cbae53b0cd8a2d371d95268da32b2f1898cf159e1e3b599199101106",
+  "requirements_digest": "eb88de8fd9347e9e19de4ffe0e7006cdaa7950821ee72a2a9d9b2a1feb43c182",
   "items": [
     {
       "id": "pendant",
@@ -12,8 +12,8 @@
       "part_number": "RELIEF-PENDANT-50",
       "manufacturer": "Project custom design",
       "source": "default",
-      "description": "50 × 34 × 3.8 mm overall; 3 mm plate; 4 mm hanging hole; 0.4/0.8 mm relief on other artwork. Central 43 × 4 mm capsule recessed 0.4 mm with 2.6 mm floor. Knob center (18,-1), diameter 4 mm, top Z=3.8 mm preserved.",
-      "selection_reason": "Custom single solid matches the reference artwork and accepted default dimensions.",
+      "description": "56 × 28 × 3.8 mm overall; 50 × 28 × 3 mm plate; left-edge lug center (-27,0), outer diameter 8 mm and through-hole diameter 4 mm, axis Z; 0.4/0.8 mm relief on other artwork. Central 43 × 4 mm capsule recessed 0.4 mm with 2.6 mm floor. Knob center (18,-1), diameter 4 mm, top Z=3.8 mm preserved. Lug-to-plate shoulders use two tangent R2 mm concave outline fillets per user markup.",
+      "selection_reason": "Custom single solid with a left-edge keyring hole and smoothly rounded lug roots as requested; default R2 mm shoulder transitions retain the hole, body and artwork dimensions.",
       "cad_relevance": "Entire delivered solid",
       "part_identity": "273fdd6e02ab41cf"
     }

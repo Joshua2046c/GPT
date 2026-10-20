@@ -2,7 +2,7 @@
   "version": 2,
   "artifact_level": "standalone_part",
   "deliverable_intent": "visual_draft",
-  "summary": "横向圆角吊牌，文字及图标浮雕；中部胶囊长条下凹，圆形按钮保持位置、直径和顶面高度。",
+  "summary": "横向圆角吊牌，左侧边缘中央吊耳及圆形贯穿钥匙孔；文字及图标浮雕，中部胶囊长条下凹，圆形按钮保持位置、直径和顶面高度。",
   "required_interfaces": [],
   "external_references": [
     {
@@ -16,6 +16,12 @@
       "source": "user_requested",
       "description": "用户标注 #1：中部胶囊长条为下凹结构，圆形按钮保持不变。",
       "path": "product/references/uploads/20260922T100437204Z-1-mark.png"
+    },
+    {
+      "id": "lug_root_rounding_markup",
+      "source": "user_requested",
+      "description": "绿色标线要求挂孔吊耳根部两侧轮廓圆润过渡。",
+      "path": "product/references/uploads/20261020T162450689Z-1-mark-1.png"
     }
   ],
   "cad": {
@@ -32,7 +38,8 @@
         "interface_ids": [],
         "reference_ids": [
           "pendant_reference",
-          "slider_recess_markup"
+          "slider_recess_markup",
+          "lug_root_rounding_markup"
         ]
       }
     ]

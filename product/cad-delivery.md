@@ -1,26 +1,17 @@
 # 吊牌 CAD 交付与检查记录
 
-## 当前交付
-- 最终版本：relief-pendant，build 3。
-- STEP：`manufacturing/relief-pendant/releases/export-ec061807783ffd047f7894b9fe56facf/model.step`。
-- 导出记录：同目录 `receipt.json`。
-- STEP SHA-256：`ec2d5638bae39cc1818edbaf265c8e5e64752f5e354fb90c9dec629d44eea08e`。
-- 参数化源码：`design/relief-pendant/source/`；约束和零件表：`product/constraints.json`、`product/bom.json`。
+## 当前模型
+钥匙挂孔及吊耳位于正面视角的左边缘中央，中心 (-27,0) mm，孔轴沿 Z 贯穿，孔径 4 mm，吊耳外径 8 mm。根部两侧采用相切的 R2 mm 内凹圆弧，沿 3 mm 底板厚度贯穿，按绿色标线平顺接入主体直边。主体 50 × 28 × 3 mm；含吊耳名义包络 56 × 28 × 3.8 mm。背面 Z=0。
 
-## 本版要求和检查
-用户标注 #1 的中部 43 × 4 mm 胶囊长条为下凹结构，不改变下方 Select effort 底块或其他图案。默认槽深为可调的 0.4 mm，槽底 Z=2.6 mm，剩余底厚 2.6 mm。
+## 检查
+- 局部放大正视及斜视已确认左侧吊耳、贯通圆孔及两处圆润根部过渡；整体预览确认单一主体外观。
+- 构建断言通过：恰好两个根部圆角、圆角填补内凹区域、有效单实体、名义包络、背面平整、凹槽深度和圆形按钮尺寸与高度。
+- 几何分析显示整体约 56 × 28 × 3.8 mm；背面平面 Z=0，基础正面 Z=3，平台 Z=3.4。
+- 中部 43 × 4 mm 胶囊槽深 0.4 mm、槽底 Z=2.6 mm；按钮中心 (18,-1)、直径 4 mm、顶面 Z=3.8 mm。文字与图标生成段保持原布局。
+- 本次修改未经过独立评审。
 
-圆形按钮中心 (18,-1) mm、直径 4 mm、顶面 Z=3.8 mm 保持与 build 2 一致；按钮下方的同径材料柱连接槽底，避免悬空。源码保留所有原有参数，仅新增 pendant_slider_recess_depth；代码差异检查显示其他图案生成段未改变。构建断言检查了按钮直径及顶面高度、槽深范围和单实体连接。
-
-- CAD 内核检查：有效实体，solidCount=1。
-- 数值几何分析：50 × 34 × 3.8 mm，背面 Z=0，整体包络未变。
-- 正视和斜视：确认长条凹槽边界、槽壁和槽底；圆形按钮仍在右侧凸起，文字与其余图案保持原布局。
-- 独立复核：No P0 or P1 findings，review-3-095ac9a9-51d9-4db4-9518-863429561f28。
-- 导出后 STEP 预览已刷新，CAD 状态 ready，未报告剩余诊断。
-
-## 视觉证据
-- 正视：`.work/cache/cad-workbench/designs/relief-pendant/observations/eb8c8e6cb59870d5ea70e56008bc17ada36f3162948141df440bb93b146e27c3/look-941337f5ef2242ef74991668/workbench_top.png`
-- 斜视：`.work/cache/cad-workbench/designs/relief-pendant/observations/eb8c8e6cb59870d5ea70e56008bc17ada36f3162948141df440bb93b146e27c3/look-941337f5ef2242ef74991668/workbench_iso.png`
+## 导出
+当前版本的交付 STEP 及其导出记录由 CAD 交付导出生成；以与当前模型一致的导出记录为准。
 
 ## 使用限制
-单一融合实体的几何交付，预览为单色，非多材料生产数据。制造工艺、材料、打印细节和吊耳承载性能未验证；未生成切片或 G-code。
+单一融合实体，非多材料生产数据。制造工艺、材料、打印细节及吊耳承载性能未验证；未生成切片或 G-code。

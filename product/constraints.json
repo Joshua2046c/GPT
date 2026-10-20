@@ -2,12 +2,12 @@
   "schema_version": 1,
   "status": "ready_for_cad",
   "units": "mm",
-  "requirements_digest": "f7ed4489cbae53b0cd8a2d371d95268da32b2f1898cf159e1e3b599199101106",
-  "coordinate_frame": "XY front face, +Y toward lug, back at Z=0",
+  "requirements_digest": "eb88de8fd9347e9e19de4ffe0e7006cdaa7950821ee72a2a9d9b2a1feb43c182",
+  "coordinate_frame": "XY front face, -X left, +Y up, back at Z=0; hanging hole axis Z",
   "mechanical": {
     "overall": [
-      50,
-      34,
+      56,
+      28,
       3.8
     ],
     "body": [
@@ -20,11 +20,14 @@
       "outer_diameter": 8,
       "hole_diameter": 4,
       "center": [
-        0,
-        16
+        -27,
+        0
       ],
       "radial_ligament": 2,
-      "body_overlap_y": 2
+      "body_overlap_x": 2,
+      "location": "left edge, centered vertically",
+      "root_transition_radius": 2,
+      "root_transition": "Two tangent concave arcs at left plate edge, extruded through base thickness"
     },
     "relief": {
       "platform_height": 0.4,
@@ -162,6 +165,7 @@
   "evidence_refs": [
     "product/requirements.json",
     "product/references/uploads/20260922T093345504Z-1-gpt.jpg",
-    "product/references/uploads/20260922T100437204Z-1-mark.png"
+    "product/references/uploads/20260922T100437204Z-1-mark.png",
+    "product/references/uploads/20261020T162450689Z-1-mark-1.png"
   ]
 }
